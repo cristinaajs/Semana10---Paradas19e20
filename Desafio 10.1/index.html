@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #showcolor {
+            text-align: center;
+            padding-top: 200px;
+        }
+        button{
+            padding: 10px 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body id="showcolor">
+    <h1>
+        Selecione uma das cores baixo:
+    </h1>
+    <div>
+        <button onclick="changeColor('yellow')">amarelo</button>
+        <button onclick="changeColor('cornflowerblue')">azul</button>
+        <button onclick="changeColor('aquamarine')">verde</button>
+    </div>
+    <script>
+        function changeColor(color) {
+            document.getElementById("showcolor").style.backgroundColor = color;
+        }
+
+    </script>
+</body>
+</html>
